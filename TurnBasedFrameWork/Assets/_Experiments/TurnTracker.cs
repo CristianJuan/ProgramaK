@@ -6,6 +6,7 @@ using System;
 public class TurnTracker : MonoBehaviour {
 
     public int CurrentTurn = 0;
+    // I need a CellGrid reference such that i can get the Event handlers from the CellGrid Script which is the thing that handles turns.
     public CellGrid _cellGrid;
 
     private void Start()
