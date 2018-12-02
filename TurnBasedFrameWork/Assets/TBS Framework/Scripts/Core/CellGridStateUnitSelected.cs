@@ -82,7 +82,7 @@ class CellGridStateUnitSelected : CellGridState
 
     public override void OnStateEnter()
     {
-        Debug.Log("Called OnStateEnter of the CellGridStateUnitSelected"+ " The _unit is: "+ _unit.name);
+       // Debug.Log("Called OnStateEnter of the CellGridStateUnitSelected"+ " The _unit is: "+ _unit.name);
         base.OnStateEnter();
 
         _unit.OnUnitSelected();
@@ -104,7 +104,7 @@ class CellGridStateUnitSelected : CellGridState
 
         foreach (var currentUnit in _cellGrid.Units)
         {
-            Debug.Log("OnState Enter saw units: " + currentUnit.name);
+            //Debug.Log("OnState Enter saw units: " + currentUnit.name);
             if (currentUnit.PlayerNumber.Equals(_unit.PlayerNumber))
                 continue;
         

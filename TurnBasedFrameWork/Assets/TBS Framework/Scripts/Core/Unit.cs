@@ -273,6 +273,7 @@ public abstract class Unit : MonoBehaviour
     /// </summary>
     public virtual void Move(Cell destinationCell, List<Cell> path)
     {
+        //Debug.Log("Called Move");
         if (isMoving)
             return;
 
@@ -292,7 +293,15 @@ public abstract class Unit : MonoBehaviour
             transform.position = Cell.transform.position;
 
         if (UnitMoved != null)
-            UnitMoved.Invoke(this, new MovementEventArgs(Cell, destinationCell, path));    
+        {
+            Debug.Log("UnitMoved event is not null, invoking now");
+            UnitMoved.Invoke(this, new MovementEventArgs(Cell, destinationCell, path));
+        }
+            
+        else
+        {
+            Debug.Log("Unit Moved event handler is null");
+        }
     }
     protected virtual IEnumerator MovementAnimation(List<Cell> path)
     {
@@ -316,7 +325,7 @@ public abstract class Unit : MonoBehaviour
         Debug.Log("is moving now false");
         this.transform.DOScale(new Vector3(1, 1, 1), 0.3f);
         //this.GetComponent<MeshRenderer>().enabled = true;
-        UnMark();//CJG 11/19/2018
+       // UnMark();//CJG 11/19/2018
     }
 
 

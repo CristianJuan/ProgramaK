@@ -99,7 +99,7 @@ public class CellGrid : MonoBehaviour
             var cell = this.gameObject.transform.GetChild(i);
             if(cell != null)
             {
-                Debug.Log("When Clearing Grid in the Initialize function of CellGrid, the cell in the foreach statement is not null");
+               // Debug.Log("When Clearing Grid in the Initialize function of CellGrid, the cell in the foreach statement is not null");
                 _cellsToDelete.Add(cell.gameObject);
             }
             else
@@ -232,12 +232,12 @@ public class CellGrid : MonoBehaviour
         if(turnTracker.CurrentTurn == TurnToSpawnObjective)
         {
             Debug.Log("CellGrid:EndTurn Creating an objective on the objectives parent");
-            objectiveGenerator.RandomSpawnObjective(Cells);
+            AddObjectiveAtRandomPosition();// Random Seed is inside this function
         }
 
         if(turnTracker.CurrentTurn == TurnToSpawnNewUnit)
         {
-            AddAIUnitsAtRunTime();// default parameter of 3
+            AddAIUnitsAtRunTime();// default parameter of 2, // Random Seed is inside this function
         }
         if (Units.Select(u => u.PlayerNumber).Distinct().Count() == 1)
         {
@@ -255,26 +255,18 @@ public class CellGrid : MonoBehaviour
 
         if (TurnEnded != null)
             TurnEnded.Invoke(this, new EventArgs());
-		if(turnTracker.CurrentTurn == NumberOfTurnsForThisMap)
-		{
-			if(GameEnded != null)
-			{
-				Debug.Log("Map Game Ended");
-				GameEnded.Invoke(this, new EventArgs());
-			}
-		}
-
 
         Units.FindAll(u => u.PlayerNumber.Equals(CurrentPlayerNumber)).ForEach(u => { u.OnTurnStart(); });
         Players.Find(p => p.PlayerNumber.Equals(CurrentPlayerNumber)).Play(this);     
     }
 
-    public void AddAIUnitsAtRunTime(int unitsToAdd = 3)//Will add the numbers of units determined by the AIUnitsToGenerate public int variable.
+    public void AddAIUnitsAtRunTime(int unitsToAdd = 2)//Will add the numbers of units determined by the AIUnitsToGenerate public int variable.
     {
 
         if (AIUnitsGenerator != null)
         {
             AIUnitsGenerator.AIUnitsToGenerate = unitsToAdd;
+            AIUnitsGenerator.seed = new System.Random().Next();
             List<Unit> NewAIUnitsAtRunTime = AIUnitsGenerator.SpawnUnits(Cells);
             foreach (var unit in NewAIUnitsAtRunTime)
             {
@@ -284,5 +276,11 @@ public class CellGrid : MonoBehaviour
         }
         else
             Debug.LogError("No AIUnitsGenerator script attached to cell grid");
+    }
+
+    public void AddObjectiveAtRandomPosition()
+    {
+        objectiveGenerator.seed = new System.Random().Next();
+        objectiveGenerator.RandomSpawnObjective(Cells);
     }
 }

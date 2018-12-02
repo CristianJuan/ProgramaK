@@ -13,8 +13,8 @@ public class GUIController : MonoBehaviour
 
     private void onLevelLoading(object sender, EventArgs e)
     {
-        Debug.Log("GUI controller onLevelLoading: sender.name ==" + sender.ToString()
-                  + " EventArgs e:" + e.ToString());
+       // Debug.Log("GUI controller onLevelLoading: sender.name ==" + sender.ToString()
+         //         + " EventArgs e:" + e.ToString());
         Debug.Log("Level is loading");
     }
 

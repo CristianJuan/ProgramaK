@@ -19,6 +19,8 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     /// Indicates if something is occupying the cell.
     /// </summary>
     public bool IsTaken;
+
+    public bool HasObjective;
     /// <summary>
     /// Cost of moving through the cell.
     /// </summary>
@@ -42,6 +44,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
 
     protected virtual void OnMouseEnter()
     {
+        //Debug.Log("Mouse entered on cell: " + this.name);
         if (CellHighlighted != null)
             CellHighlighted.Invoke(this, new EventArgs());
     }

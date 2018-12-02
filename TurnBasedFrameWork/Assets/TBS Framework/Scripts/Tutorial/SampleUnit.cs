@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
+using System;
+
 public class SampleUnit : Unit
 {
     public Color LeadingColor;//from the inspector window of the prefab.
@@ -24,7 +27,8 @@ public class SampleUnit : Unit
     // Start CJG 11/19/2018
     private void Start()
     {
-        Debug.Log("Unit: " + this.name + " called Start");
+        this.UnitMoved += ProcessingAfterUnitMoves;
+        //Debug.Log("Unit: " + this.name + " called Start");
         _thisOutlineScript = GetComponent<QuickOutline>();
         _thisOutlineScript.enabled = false;
         if (fieldOfView == null)
@@ -33,9 +37,11 @@ public class SampleUnit : Unit
         }
 
         myWeaponSystemController = this.GetComponent<WeaponSystemController>();
+        weaponSystems.Add(myWeaponSystemController.EquippedWeaponSystem as IWeaponSystem);
        // myTurret = myWeaponSystemController.EquippedWeaponSystem as MyTurret;
 
     }
+
     // End CJG 11/19/2018
 
     public override void MarkAsAttacking(Unit other)
@@ -70,7 +76,7 @@ public class SampleUnit : Unit
     public override void MarkAsFriendly()
     {
 
-        Debug.Log("Unit: "+ this.name + " called MarkAsFriendly");
+        //Debug.Log("Unit: "+ this.name + " called MarkAsFriendly");
         //GetComponent<Renderer>().material.color = LeadingColor + new Color(0.8f, 1, 0.8f); CJG 11/19/2018
         // start CJG 11/19/2018
         if (_thisOutlineScript != null)
@@ -126,11 +132,48 @@ public class SampleUnit : Unit
             return false;
     }
 
-    public void ToBeCalledAfterAUnitMoves()
+    //public Component[] comp; To inspect in Unity using the inspector
+    private void ProcessingAfterUnitMoves(object sender, MovementEventArgs e)
     {
+        string Enemy = "Enemy";
+        string Friend = "Friend";
+        SampleUnit senderAsUnit = sender as SampleUnit;
+        bool CellHasObjective = e.DestinationCell.HasObjective;
+        if(CellHasObjective)//this means that there is a child in the cell with an objective script.
+        {
+            e.DestinationCell.HasObjective = false;
+            if(senderAsUnit != null)
+            {
+                // Check if friend unit or enemy unit got in it
+                if (senderAsUnit.tag == Friend)
+                {
+                    Debug.Log("Friendly unit got into the cell with the objective");
+                    StartCoroutine(GetObjective(e, 2.1f));
+                }
+                else
+                {
+                    Debug.Log("Something else entered into the cell with the objective");
+                    if (senderAsUnit.tag == "Enemy")
+                    {
+                        Debug.Log("An enemy unit entered into the cell with the objective");
+                        StartCoroutine(GetObjective(e, 2.1f));
+                    }
+                }
+            }
+            else
+            {
+                Debug.Log("sender is null");
+            }
+
+        }
 
     }
 
-    //IsUnitAttackbleFromFieldOfView()
-
+    IEnumerator GetObjective(MovementEventArgs e, float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        Component[] cellComponents = e.DestinationCell.transform.GetComponentsInChildren<Objective>();
+        GameObject objectiveGameObject = cellComponents[0].gameObject;
+        Destroy(objectiveGameObject);
+    }
 }

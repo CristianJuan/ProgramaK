@@ -8,15 +8,16 @@ public class RunTimeAIUnitGenerator : MonoBehaviour {
 
     public Transform RunTimeAIUnitsParent;
     public GameObject RunTimeAIUnitsPrefab;
-    public static int seed = 10;
+    public int seed = 10;
     public CellGrid CellGrid;// for inspector snap to grid
-    private System.Random _rnd = new System.Random(seed);
+    private System.Random _rnd;
     public int AIUnitsToGenerate = 3;
 
     Queue<Cell> shuffledCells;
 
     public List<Unit> SpawnUnits(List<Cell> cellsFromCellGridObj)
     {
+        _rnd = new System.Random(seed);
         Debug.Log("Called SpawnUnits of the RunTimeAIUnitGenerator");
         List<Unit> ret = new List<Unit>();
         List<Cell> freeCells = cellsFromCellGridObj.FindAll(h => h.GetComponent<Cell>().IsTaken == false);

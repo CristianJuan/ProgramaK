@@ -15,7 +15,7 @@ public class RectangularSquareGridGenerator : ICellGridGenerator
 
     public override List<Cell> GenerateGrid()
     {
-        Debug.Log("Rectangular Square Grid Generator called GenerateGrid()");
+        //Debug.Log("Rectangular Square Grid Generator called GenerateGrid()");
         var ret = new List<Cell>();
 
         if (SquarePrefab.GetComponent<Square>() == null)
