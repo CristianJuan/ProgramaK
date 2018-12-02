@@ -6,11 +6,11 @@ public class SampleUnit : Unit
     public string unitname;
     //public MyTurret myTurret;
     WeaponSystemController myWeaponSystemController;
+
     public WeaponSystemController getMyWeaponSystemController()
     {
         return myWeaponSystemController;
     }
- 
 
     public override void Initialize()
     {
@@ -19,11 +19,12 @@ public class SampleUnit : Unit
         GetComponent<Renderer>().material.color = LeadingColor;// CJG 11/19/2018, this makes the material of the Unit equal to the Leading Color color selected from the inspector
     }
 
-    QuickOutline _thisOutlineScript = null;// CJG 11/19/2018
+    public QuickOutline _thisOutlineScript;// CJG 11/19/2018
 
     // Start CJG 11/19/2018
     private void Start()
     {
+        Debug.Log("Unit: " + this.name + " called Start");
         _thisOutlineScript = GetComponent<QuickOutline>();
         _thisOutlineScript.enabled = false;
         if (fieldOfView == null)
@@ -68,6 +69,8 @@ public class SampleUnit : Unit
 
     public override void MarkAsFriendly()
     {
+
+        Debug.Log("Unit: "+ this.name + " called MarkAsFriendly");
         //GetComponent<Renderer>().material.color = LeadingColor + new Color(0.8f, 1, 0.8f); CJG 11/19/2018
         // start CJG 11/19/2018
         if (_thisOutlineScript != null)

@@ -232,3 +232,4 @@ MonoBehaviour:
   weaponSystems: []
   LeadingColor: {r: 0.09803922, g: 0.42352942, b: 0.7647059, a: 0}
   unitname: Unit1Prefab
+  _thisOutlineScript: {fileID: 114090576488709034}

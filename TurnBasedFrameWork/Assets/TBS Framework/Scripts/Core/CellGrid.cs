@@ -70,6 +70,7 @@ public class CellGrid : MonoBehaviour
     public CustomObstacleGenerator obstacleGenerator;// to come from the inspector
     public CustomObjectiveGenerator objectiveGenerator;// to come from the inspector
     public TurnTracker turnTracker;// to come from the inspector
+    public RunTimeAIUnitGenerator AIUnitsGenerator;// to come from the inspector
 
     public List<Player> Players { get; private set; }
     public List<Cell> Cells { get; private set; }
@@ -222,7 +223,8 @@ public class CellGrid : MonoBehaviour
     {
         int TurnBeforeSpawingObjective = 2; // Should be get from a random thing. Remember it starts from 0 in CellGrid
         int TurnToSpawnObjective = 3;// Should be get from a random thing. Remember it starts from 0 in CellGrid
-
+        int TurnToSpawnNewUnit = 6;
+		int NumberOfTurnsForThisMap = 10;
         if (turnTracker.CurrentTurn == TurnBeforeSpawingObjective)
         {
             Debug.Log("Objective coming in the next turn!. Be ready");
@@ -231,6 +233,11 @@ public class CellGrid : MonoBehaviour
         {
             Debug.Log("CellGrid:EndTurn Creating an objective on the objectives parent");
             objectiveGenerator.RandomSpawnObjective(Cells);
+        }
+
+        if(turnTracker.CurrentTurn == TurnToSpawnNewUnit)
+        {
+            AddAIUnitsAtRunTime();// default parameter of 3
         }
         if (Units.Select(u => u.PlayerNumber).Distinct().Count() == 1)
         {
@@ -248,8 +255,34 @@ public class CellGrid : MonoBehaviour
 
         if (TurnEnded != null)
             TurnEnded.Invoke(this, new EventArgs());
+		if(turnTracker.CurrentTurn == NumberOfTurnsForThisMap)
+		{
+			if(GameEnded != null)
+			{
+				Debug.Log("Map Game Ended");
+				GameEnded.Invoke(this, new EventArgs());
+			}
+		}
+
 
         Units.FindAll(u => u.PlayerNumber.Equals(CurrentPlayerNumber)).ForEach(u => { u.OnTurnStart(); });
         Players.Find(p => p.PlayerNumber.Equals(CurrentPlayerNumber)).Play(this);     
+    }
+
+    public void AddAIUnitsAtRunTime(int unitsToAdd = 3)//Will add the numbers of units determined by the AIUnitsToGenerate public int variable.
+    {
+
+        if (AIUnitsGenerator != null)
+        {
+            AIUnitsGenerator.AIUnitsToGenerate = unitsToAdd;
+            List<Unit> NewAIUnitsAtRunTime = AIUnitsGenerator.SpawnUnits(Cells);
+            foreach (var unit in NewAIUnitsAtRunTime)
+            {
+                Units.Add(unit as Unit);//part of the CellGrid
+                AddUnit(unit.GetComponent<Transform>());// func call
+            }
+        }
+        else
+            Debug.LogError("No AIUnitsGenerator script attached to cell grid");
     }
 }
