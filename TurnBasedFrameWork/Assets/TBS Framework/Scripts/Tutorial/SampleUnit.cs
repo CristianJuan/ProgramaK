@@ -38,7 +38,7 @@ public class SampleUnit : Unit
 
         myWeaponSystemController = this.GetComponent<WeaponSystemController>();
         weaponSystems.Add(myWeaponSystemController.EquippedWeaponSystem as IWeaponSystem);
-       // myTurret = myWeaponSystemController.EquippedWeaponSystem as MyTurret;
+        // myTurret = myWeaponSystemController.EquippedWeaponSystem as MyTurret;
 
     }
 
@@ -48,7 +48,7 @@ public class SampleUnit : Unit
     {
         Debug.Log(unitname + " Called MarkAsAttacking");
         Debug.Log(unitname + " MarkAsAttacking passed as parameter the unit " + other.name);
-        if(myWeaponSystemController != null)
+        if (myWeaponSystemController != null)
         {
             myWeaponSystemController.ExecuteSystem(ref other);
             //myTurret.WeaponSystemProcess(ref other);
@@ -66,7 +66,7 @@ public class SampleUnit : Unit
     }
 
     public override void MarkAsDestroyed()
-    {      
+    {
     }
 
     public override void MarkAsFinished()
@@ -92,7 +92,7 @@ public class SampleUnit : Unit
 
     public override void MarkAsReachableEnemy()
     {
-        GetComponent<Renderer>().material.color = LeadingColor + Color.red ;
+        GetComponent<Renderer>().material.color = LeadingColor + Color.red;
     }
 
     public override void MarkAsSelected()
@@ -139,10 +139,10 @@ public class SampleUnit : Unit
         string Friend = "Friend";
         SampleUnit senderAsUnit = sender as SampleUnit;
         bool CellHasObjective = e.DestinationCell.HasObjective;
-        if(CellHasObjective)//this means that there is a child in the cell with an objective script.
+        if (CellHasObjective)//this means that there is a child in the cell with an objective script.
         {
             e.DestinationCell.HasObjective = false;
-            if(senderAsUnit != null)
+            if (senderAsUnit != null)
             {
                 // Check if friend unit or enemy unit got in it
                 if (senderAsUnit.tag == Friend)

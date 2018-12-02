@@ -47,6 +47,7 @@ public abstract class Unit : MonoBehaviour
     /// UnitMoved event is invoked when unit moves from one cell to another.
     /// </summary>
     public event EventHandler<MovementEventArgs> UnitMoved;
+    public event EventHandler MovementAnimationFinished;
 
     public UnitState UnitState { get; set; }
     public void SetState(UnitState state)
@@ -322,6 +323,9 @@ public abstract class Unit : MonoBehaviour
             }
         }
         isMoving = false;
+        if (MovementAnimationFinished != null)
+            MovementAnimationFinished.Invoke(this, new EventArgs());// Maybe create a new Class that inherits from EventArgs that has only Cell property isntead of Cell, destination Cell, path like baseline
+
         Debug.Log("is moving now false");
         this.transform.DOScale(new Vector3(1, 1, 1), 0.3f);
         //this.GetComponent<MeshRenderer>().enabled = true;
