@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System;
@@ -34,7 +35,10 @@ public class CellGrid : MonoBehaviour
     /// UnitAdded event is invoked each time AddUnit method is called.
     /// </summary>
     public event EventHandler<UnitCreatedEventArgs> UnitAdded;
-    
+
+
+
+
     private CellGridState _cellGridState; //The grid delegates some of its behaviours to cellGridState object.
     public CellGridState CellGridState
     {
@@ -76,8 +80,11 @@ public class CellGrid : MonoBehaviour
     public List<Cell> Cells { get; private set; }
     public List<Unit> Units { get; private set; }
 
+    public static int counter = 120;
     private void Start()
     {
+        StartCoroutine(FuelNotification());
+
         if (LevelLoading != null)
             LevelLoading.Invoke(this, new EventArgs());
 
@@ -87,6 +94,23 @@ public class CellGrid : MonoBehaviour
             LevelLoadingDone.Invoke(this, new EventArgs());
 
         StartGame();
+    }
+
+    IEnumerator FuelNotification()
+    {
+        Debug.Log("Waiting for tank to get empty");
+        yield return new WaitUntil(() => counter <= 0);
+        Debug.Log("Tank Empty!"); //Notification Would need the rest of the Initialize source code called from a new function. Such as to
+        // WaitUntil the user accepts its units on the map.
+    }
+
+    void Update()
+    {
+        if (counter > 0)
+        {
+            //Debug.Log("Fuel Level: " + counter);
+            counter--;
+        }
     }
 
     private void Initialize()
