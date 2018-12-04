@@ -182,10 +182,30 @@ public class CellGrid : MonoBehaviour
             foreach (var unit in Units)
             {
                 AddUnit(unit.GetComponent<Transform>());
+                unit.GetComponent<MeshRenderer>().enabled = false;
+
             }
         }
         else
             Debug.LogError("No IUnitGenerator script attached to cell grid");
+
+        StartCoroutine(EnableFriendUnitsMeshRenderers(0.5f));
+
+    }
+
+    private IEnumerator EnableFriendUnitsMeshRenderers(float v)
+    {
+        yield return new WaitForSeconds(v);
+        Vector3 spawnInOffset = new Vector3(1, 0, 0);
+        foreach (var unit in Units)
+        {
+            unit.transform.position = unit.transform.position + spawnInOffset;
+        }
+        foreach (var unit in Units)
+        {
+            unit.GetComponent<MeshRenderer>().enabled = true;
+        }
+
     }
 
     private void OnCellDehighlighted(object sender, EventArgs e)
