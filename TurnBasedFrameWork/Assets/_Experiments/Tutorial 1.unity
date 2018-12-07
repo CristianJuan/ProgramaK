@@ -158,6 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &9961377
 MeshRenderer:
@@ -300,6 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &30043477
 MeshRenderer:
@@ -400,6 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &30151417
 MeshRenderer:
@@ -500,6 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &39813727
 MeshRenderer:
@@ -600,6 +604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &43276132
 MeshRenderer:
@@ -700,6 +705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &43659235
 MeshRenderer:
@@ -800,6 +806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &55068744
 MeshRenderer:
@@ -900,6 +907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &55448458
 MeshRenderer:
@@ -1000,6 +1008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &66133291
 MeshRenderer:
@@ -1100,6 +1109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &73558292
 MeshRenderer:
@@ -1205,6 +1215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &77126325
 MeshRenderer:
@@ -1305,6 +1316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &113222582
 MeshRenderer:
@@ -1439,6 +1451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &128138910
 MeshRenderer:
@@ -1539,6 +1552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &130249873
 MeshRenderer:
@@ -1639,6 +1653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &135919327
 MeshRenderer:
@@ -1739,6 +1754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &146242354
 MeshRenderer:
@@ -1839,6 +1855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &155261692
 MeshRenderer:
@@ -1939,6 +1956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &156272482
 MeshRenderer:
@@ -2039,6 +2057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &161230080
 MeshRenderer:
@@ -2139,6 +2158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &162423781
 MeshRenderer:
@@ -2239,6 +2259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &170071384
 MeshRenderer:
@@ -2339,6 +2360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &190816613
 MeshRenderer:
@@ -2514,6 +2536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &193695991
 MeshRenderer:
@@ -2614,6 +2637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &201928849
 MeshRenderer:
@@ -2714,6 +2738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &205796287
 MeshRenderer:
@@ -2814,6 +2839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &212794054
 MeshRenderer:
@@ -2975,6 +3001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &214608709
 MeshRenderer:
@@ -3075,6 +3102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &223340170
 MeshRenderer:
@@ -3175,6 +3203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &225104071
 MeshRenderer:
@@ -3393,6 +3422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &242499430
 MeshRenderer:
@@ -3493,6 +3523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &246564594
 MeshRenderer:
@@ -3686,6 +3717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &247048099
 MeshRenderer:
@@ -3786,6 +3818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &248261450
 MeshRenderer:
@@ -3886,6 +3919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &259911209
 MeshRenderer:
@@ -3986,6 +4020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &260931284
 MeshRenderer:
@@ -4086,6 +4121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &262750113
 MeshRenderer:
@@ -4186,6 +4222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &270648138
 MeshRenderer:
@@ -4286,6 +4323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &270784055
 MeshRenderer:
@@ -4386,6 +4424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &276559431
 MeshRenderer:
@@ -4486,6 +4525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &286318855
 MeshRenderer:
@@ -4586,6 +4626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &290127641
 MeshRenderer:
@@ -4686,6 +4727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &334586275
 MeshRenderer:
@@ -4786,6 +4828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &334750245
 MeshRenderer:
@@ -4886,6 +4929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &335491426
 MeshRenderer:
@@ -4986,6 +5030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &348583471
 MeshRenderer:
@@ -5086,6 +5131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &353606936
 MeshRenderer:
@@ -5186,6 +5232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &356102012
 MeshRenderer:
@@ -5406,6 +5453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &394423770
 MeshRenderer:
@@ -5506,6 +5554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &417557856
 MeshRenderer:
@@ -5606,6 +5655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &419847486
 MeshRenderer:
@@ -5706,6 +5756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &436452547
 MeshRenderer:
@@ -5806,6 +5857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &443631984
 MeshRenderer:
@@ -5906,6 +5958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &446990100
 MeshRenderer:
@@ -6006,6 +6059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &447671098
 MeshRenderer:
@@ -6164,6 +6218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &456783450
 MeshRenderer:
@@ -6264,6 +6319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &466606531
 MeshRenderer:
@@ -6364,6 +6420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &471792864
 MeshRenderer:
@@ -6464,6 +6521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &484290014
 MeshRenderer:
@@ -6564,6 +6622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &487094217
 MeshRenderer:
@@ -6664,6 +6723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &493576653
 MeshRenderer:
@@ -6764,6 +6824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &502946889
 MeshRenderer:
@@ -6911,6 +6972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &538414654
 MeshRenderer:
@@ -7011,6 +7073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &548153302
 MeshRenderer:
@@ -7451,6 +7514,7 @@ MonoBehaviour:
   RunTimeAIUnitsParent: {fileID: 1018206346}
   RunTimeAIUnitsPrefab: {fileID: 1336090817309432, guid: bc43f97734afa4a95985973f162e99ae,
     type: 2}
+  seed: 10
   CellGrid: {fileID: 555819602}
   AIUnitsToGenerate: 3
 --- !u!1 &569534805
@@ -7498,6 +7562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &569534808
 MeshRenderer:
@@ -7598,6 +7663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &576781811
 MeshRenderer:
@@ -7698,6 +7764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &577966853
 MeshRenderer:
@@ -7798,6 +7865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &582971832
 MeshRenderer:
@@ -7898,6 +7966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &585080549
 MeshRenderer:
@@ -8003,6 +8072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &595595828
 MeshRenderer:
@@ -8245,6 +8315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &618775416
 MeshRenderer:
@@ -8345,6 +8416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &647739267
 MeshRenderer:
@@ -8516,6 +8588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &668522557
 MeshRenderer:
@@ -8616,6 +8689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &670383308
 MeshRenderer:
@@ -8892,6 +8966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &699188622
 MeshRenderer:
@@ -8992,6 +9067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &723986932
 MeshRenderer:
@@ -9092,6 +9168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &733478733
 MeshRenderer:
@@ -9192,6 +9269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &757526772
 MeshRenderer:
@@ -9292,6 +9370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &782825423
 MeshRenderer:
@@ -9591,6 +9670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &802323933
 MeshRenderer:
@@ -9766,6 +9846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &821104810
 MeshRenderer:
@@ -9866,6 +9947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &833061350
 MeshRenderer:
@@ -10149,6 +10231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &851151801
 MeshRenderer:
@@ -10249,6 +10332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &851534339
 MeshRenderer:
@@ -10473,6 +10557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &855873150
 MeshRenderer:
@@ -10573,6 +10658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &869918147
 MeshRenderer:
@@ -10739,6 +10825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &895264162
 MeshRenderer:
@@ -10839,6 +10926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &922483029
 MeshRenderer:
@@ -10939,6 +11027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &924623278
 MeshRenderer:
@@ -11039,6 +11128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &926732926
 MeshRenderer:
@@ -11139,6 +11229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &928912362
 MeshRenderer:
@@ -11239,6 +11330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &937369985
 MeshRenderer:
@@ -11339,6 +11431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &949658726
 MeshRenderer:
@@ -11439,6 +11532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &958257836
 MeshRenderer:
@@ -11539,6 +11633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &965155799
 MeshRenderer:
@@ -11639,6 +11734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &984398300
 MeshRenderer:
@@ -11949,6 +12045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &997172421
 MeshRenderer:
@@ -12049,6 +12146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1000511335
 MeshRenderer:
@@ -12149,6 +12247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1002029229
 MeshRenderer:
@@ -12249,6 +12348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1004505989
 MeshRenderer:
@@ -12621,6 +12721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1023869160
 MeshRenderer:
@@ -12721,6 +12822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1028769183
 MeshRenderer:
@@ -12821,6 +12923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1038786327
 MeshRenderer:
@@ -12921,6 +13024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1065520208
 MeshRenderer:
@@ -13021,6 +13125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1077632315
 MeshRenderer:
@@ -13223,6 +13328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1080752663
 MeshRenderer:
@@ -13323,6 +13429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1090727540
 MeshRenderer:
@@ -13558,6 +13665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1103071823
 MeshRenderer:
@@ -13658,6 +13766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1107328221
 MeshRenderer:
@@ -13861,6 +13970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1110877343
 MeshRenderer:
@@ -13961,6 +14071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1118839747
 MeshRenderer:
@@ -14061,6 +14172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1119965897
 MeshRenderer:
@@ -14287,6 +14399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1133613275
 MeshRenderer:
@@ -14387,6 +14500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1135347197
 MeshRenderer:
@@ -14487,6 +14601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1135873729
 MeshRenderer:
@@ -14617,6 +14732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1151644020
 MeshRenderer:
@@ -14717,6 +14833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1151773954
 MeshRenderer:
@@ -14892,6 +15009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1157435194
 MeshRenderer:
@@ -14992,6 +15110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1164425626
 MeshRenderer:
@@ -15092,6 +15211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1168092920
 MeshRenderer:
@@ -15192,6 +15312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1184210935
 MeshRenderer:
@@ -15292,6 +15413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1195285371
 MeshRenderer:
@@ -15527,6 +15649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1206922878
 MeshRenderer:
@@ -15627,6 +15750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1209548404
 MeshRenderer:
@@ -15727,6 +15851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1223517611
 MeshRenderer:
@@ -15827,6 +15952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1227172352
 MeshRenderer:
@@ -15927,6 +16053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1229414695
 MeshRenderer:
@@ -16027,6 +16154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1230743449
 MeshRenderer:
@@ -16251,6 +16379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1235591327
 MeshRenderer:
@@ -16351,6 +16480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1239103377
 MeshRenderer:
@@ -16451,6 +16581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1239559147
 MeshRenderer:
@@ -16551,6 +16682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1247128489
 MeshRenderer:
@@ -16651,6 +16783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1247378235
 MeshRenderer:
@@ -16751,6 +16884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1251945807
 MeshRenderer:
@@ -16851,6 +16985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1262016279
 MeshRenderer:
@@ -17011,6 +17146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1274829932
 MeshRenderer:
@@ -17111,6 +17247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1278005207
 MeshRenderer:
@@ -17211,6 +17348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1281784151
 MeshRenderer:
@@ -17311,6 +17449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1284393826
 MeshRenderer:
@@ -17411,6 +17550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1297167035
 MeshRenderer:
@@ -17511,6 +17651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1311693458
 MeshRenderer:
@@ -17644,6 +17785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1341350435
 MeshRenderer:
@@ -17744,6 +17886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1343557611
 MeshRenderer:
@@ -17844,6 +17987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1345769662
 MeshRenderer:
@@ -17944,6 +18088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1359550350
 MeshRenderer:
@@ -18072,6 +18217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1376789239
 MeshRenderer:
@@ -18172,6 +18318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1380602232
 MeshRenderer:
@@ -18333,6 +18480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1400610063
 MeshRenderer:
@@ -18433,6 +18581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1404318378
 MeshRenderer:
@@ -18533,6 +18682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1422487167
 MeshRenderer:
@@ -18633,6 +18783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1428757934
 MeshRenderer:
@@ -18733,6 +18884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1434659300
 MeshRenderer:
@@ -18833,6 +18985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1437887030
 MeshRenderer:
@@ -18933,6 +19086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1446891786
 MeshRenderer:
@@ -19126,6 +19280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1457041587
 MeshRenderer:
@@ -19226,6 +19381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1469168279
 MeshRenderer:
@@ -19326,6 +19482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1469878305
 MeshRenderer:
@@ -19426,6 +19583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1472138365
 MeshRenderer:
@@ -19526,6 +19684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1476317947
 MeshRenderer:
@@ -19667,6 +19826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1482331693
 MeshRenderer:
@@ -19767,6 +19927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1486646550
 MeshRenderer:
@@ -19867,6 +20028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1488907767
 MeshRenderer:
@@ -19967,6 +20129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1500105576
 MeshRenderer:
@@ -20142,6 +20305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1503123268
 MeshRenderer:
@@ -20242,6 +20406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1505550502
 MeshRenderer:
@@ -20342,6 +20507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1518739106
 MeshRenderer:
@@ -20442,6 +20608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1525520558
 MeshRenderer:
@@ -20542,6 +20709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1532033982
 MeshRenderer:
@@ -20642,6 +20810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1540696008
 MeshRenderer:
@@ -20742,6 +20911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1542826577
 MeshRenderer:
@@ -20842,6 +21012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1548775877
 MeshRenderer:
@@ -20942,6 +21113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1552866451
 MeshRenderer:
@@ -21042,6 +21214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1563152540
 MeshRenderer:
@@ -21142,6 +21315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1571905333
 MeshRenderer:
@@ -21377,6 +21551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1580943455
 MeshRenderer:
@@ -21477,6 +21652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1588426605
 MeshRenderer:
@@ -21577,6 +21753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 10, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1593759241
 MeshRenderer:
@@ -21677,6 +21854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1594586714
 MeshRenderer:
@@ -21732,6 +21910,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1594586711}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1597543691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1597543693}
+  - component: {fileID: 1597543692}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1597543692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1597543691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72235b307c00a4619bcf7094893aeead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1597543693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1597543691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1598702906
 GameObject:
   m_ObjectHideFlags: 0
@@ -21777,6 +21995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1598702909
 MeshRenderer:
@@ -21952,6 +22171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1604642950
 MeshRenderer:
@@ -22052,6 +22272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1607824812
 MeshRenderer:
@@ -22152,6 +22373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1612108209
 MeshRenderer:
@@ -22252,6 +22474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1614844334
 MeshRenderer:
@@ -22352,6 +22575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1615221251
 MeshRenderer:
@@ -22503,6 +22727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1627185955
 MeshRenderer:
@@ -22745,6 +22970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1635944891
 MeshRenderer:
@@ -22845,6 +23071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1636945197
 MeshRenderer:
@@ -22997,6 +23224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1649990383
 MeshRenderer:
@@ -23097,6 +23325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1650135533
 MeshRenderer:
@@ -23339,6 +23568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1653592330
 MeshRenderer:
@@ -23439,6 +23669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1678017453
 MeshRenderer:
@@ -23539,6 +23770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1680061267
 MeshRenderer:
@@ -23639,6 +23871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1687115187
 MeshRenderer:
@@ -23739,6 +23972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1687516246
 MeshRenderer:
@@ -23880,6 +24114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1701493786
 MeshRenderer:
@@ -23980,6 +24215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1703774763
 MeshRenderer:
@@ -24080,6 +24316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1710379940
 MeshRenderer:
@@ -24180,6 +24417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1713030308
 MeshRenderer:
@@ -24280,6 +24518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1713136172
 MeshRenderer:
@@ -24380,6 +24619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1726559321
 MeshRenderer:
@@ -24480,6 +24720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1747385863
 MeshRenderer:
@@ -24580,6 +24821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1758498500
 MeshRenderer:
@@ -24680,6 +24922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1764391006
 MeshRenderer:
@@ -24877,6 +25120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1770855855
 MeshRenderer:
@@ -24977,6 +25221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1775561171
 MeshRenderer:
@@ -25077,6 +25322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1781757194
 MeshRenderer:
@@ -25177,6 +25423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1794561041
 MeshRenderer:
@@ -25277,6 +25524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1801559372
 MeshRenderer:
@@ -25377,6 +25625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1807276124
 MeshRenderer:
@@ -25477,6 +25726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1808414932
 MeshRenderer:
@@ -25761,6 +26011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1833635032
 MeshRenderer:
@@ -25861,6 +26112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1834915577
 MeshRenderer:
@@ -25961,6 +26213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1837743533
 MeshRenderer:
@@ -26061,6 +26314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1840234563
 MeshRenderer:
@@ -26161,6 +26415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1841832038
 MeshRenderer:
@@ -26261,6 +26516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 12}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1843289920
 MeshRenderer:
@@ -26361,6 +26617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1851090066
 MeshRenderer:
@@ -26554,6 +26811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1861870784
 MeshRenderer:
@@ -26729,6 +26987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1873974555
 MeshRenderer:
@@ -26829,6 +27088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1887693553
 MeshRenderer:
@@ -26929,6 +27189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 4, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1891641676
 MeshRenderer:
@@ -27029,6 +27290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1893877049
 MeshRenderer:
@@ -27129,6 +27391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1902238928
 MeshRenderer:
@@ -27229,6 +27492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1905137518
 MeshRenderer:
@@ -27329,6 +27593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1913318134
 MeshRenderer:
@@ -27471,6 +27736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1913855598
 MeshRenderer:
@@ -27571,6 +27837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1929174935
 MeshRenderer:
@@ -27671,6 +27938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1931748258
 MeshRenderer:
@@ -27771,6 +28039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 5, y: 2}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1936783303
 MeshRenderer:
@@ -27871,6 +28140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1937157477
 MeshRenderer:
@@ -27971,6 +28241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1938167427
 MeshRenderer:
@@ -28071,6 +28342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1939416950
 MeshRenderer:
@@ -28171,6 +28443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 7, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1940613960
 MeshRenderer:
@@ -28271,6 +28544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 9, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1944976745
 MeshRenderer:
@@ -28371,6 +28645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 0}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1945626140
 MeshRenderer:
@@ -28471,6 +28746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1945950227
 MeshRenderer:
@@ -28571,6 +28847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1953644954
 MeshRenderer:
@@ -28671,6 +28948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1971675481
 MeshRenderer:
@@ -28776,6 +29054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 3}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &1989906157
 MeshRenderer:
@@ -28876,6 +29155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 1}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2004698710
 MeshRenderer:
@@ -28976,6 +29256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 14, y: 11}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2019237509
 MeshRenderer:
@@ -29076,6 +29357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2019715965
 MeshRenderer:
@@ -29388,6 +29670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 0, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2032964192
 MeshRenderer:
@@ -29562,6 +29845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 8}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2042247019
 MeshRenderer:
@@ -29752,6 +30036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 5}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2050689563
 MeshRenderer:
@@ -29852,6 +30137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 2, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2060110965
 MeshRenderer:
@@ -29952,6 +30238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 6, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2062195053
 MeshRenderer:
@@ -30052,6 +30339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 6}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2065319182
 MeshRenderer:
@@ -30152,6 +30440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 10}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2073618208
 MeshRenderer:
@@ -30345,6 +30634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 14}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2085431731
 MeshRenderer:
@@ -30445,6 +30735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 8, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2086663644
 MeshRenderer:
@@ -30618,6 +30909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 12, y: 7}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2096515739
 MeshRenderer:
@@ -30718,6 +31010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 13, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2096884215
 MeshRenderer:
@@ -30818,6 +31111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 3, y: 13}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2102136253
 MeshRenderer:
@@ -30993,6 +31287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 11, y: 4}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2108314961
 MeshRenderer:
@@ -31093,6 +31388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 15, y: 15}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2126263151
 MeshRenderer:
@@ -31193,6 +31489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offsetCoord: {x: 1, y: 9}
   IsTaken: 0
+  HasObjective: 0
   MovementCost: 1
 --- !u!23 &2129264778
 MeshRenderer:

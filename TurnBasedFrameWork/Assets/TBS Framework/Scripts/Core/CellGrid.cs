@@ -81,6 +81,13 @@ public class CellGrid : MonoBehaviour
     public List<Unit> Units { get; private set; }
 
     public static int counter = 120;
+
+    SpawnManager spawnManager;
+    private void Awake()
+    {
+        spawnManager = SpawnManager.instance;
+
+    }
     private void Start()
     {
         StartCoroutine(FuelNotification());
@@ -92,7 +99,7 @@ public class CellGrid : MonoBehaviour
 
         if (LevelLoadingDone != null)
             LevelLoadingDone.Invoke(this, new EventArgs());
-
+        spawnManager.InitializeSpawnManager(Cells);
         StartGame();
     }
 

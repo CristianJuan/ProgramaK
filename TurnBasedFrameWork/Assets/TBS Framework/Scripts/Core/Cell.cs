@@ -49,7 +49,8 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
             CellHighlighted.Invoke(this, new EventArgs());
     }
     protected virtual void OnMouseExit()
-    {    
+    {
+        //Debug.Log("Mouse exited cell: " + this.name);
         if (CellDehighlighted != null)
             CellDehighlighted.Invoke(this, new EventArgs());
     }
@@ -59,6 +60,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
         {
             Debug.Log("Im invoking OnMouseDown for a Cell Unit");
             CellClicked.Invoke(this, new EventArgs());
+
         }
     }
 
