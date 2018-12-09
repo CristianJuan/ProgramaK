@@ -90,8 +90,6 @@ public class CellGrid : MonoBehaviour
     }
     private void Start()
     {
-        StartCoroutine(FuelNotification());
-
         if (LevelLoading != null)
             LevelLoading.Invoke(this, new EventArgs());
 
@@ -103,24 +101,7 @@ public class CellGrid : MonoBehaviour
         StartGame();
     }
 
-    IEnumerator FuelNotification()
-    {
-        Debug.Log("Waiting for tank to get empty");
-        yield return new WaitUntil(() => counter <= 0);
-        Debug.Log("Tank Empty!"); //Notification Would need the rest of the Initialize source code called from a new function. Such as to
-        // WaitUntil the user accepts its units on the map.
-    }
-
-    void Update()
-    {
-        if (counter > 0)
-        {
-            //Debug.Log("Fuel Level: " + counter);
-            counter--;
-        }
-    }
-
-    private void Initialize()
+    void ClearAndCreateMap()
     {
         //START CJG
         //Clear and Generate Grid at run time, added this in addtion to the generator working in the inspector.
@@ -128,9 +109,9 @@ public class CellGrid : MonoBehaviour
         for (int i = 0; i < this.transform.childCount; i++)
         {
             var cell = this.gameObject.transform.GetChild(i);
-            if(cell != null)
+            if (cell != null)
             {
-               // Debug.Log("When Clearing Grid in the Initialize function of CellGrid, the cell in the foreach statement is not null");
+                // Debug.Log("When Clearing Grid in the Initialize function of CellGrid, the cell in the foreach statement is not null");
                 _cellsToDelete.Add(cell.gameObject);
             }
             else
@@ -152,28 +133,6 @@ public class CellGrid : MonoBehaviour
                 Debug.LogError("Invalid object in cells paretn game object");
         }
 
-        //END CJG
-
-        //START CJG
-        // Spawn Obstacles
-        obstacleGenerator.RandomSpawnObstacles(Cells);
-
-        //END CJG
-
-
-        Players = new List<Player>();
-        for (int i = 0; i < PlayersParent.childCount; i++)
-        {
-            var player = PlayersParent.GetChild(i).GetComponent<Player>();
-            if (player != null)
-                Players.Add(player);
-            else
-                Debug.LogError("Invalid object in Players Parent game object");
-        }
-        NumberOfPlayers = Players.Count;
-        CurrentPlayerNumber = Players.Min(p => p.PlayerNumber);
-
-
         foreach (var cell in Cells)
         {
             cell.CellClicked += OnCellClicked;
@@ -181,6 +140,31 @@ public class CellGrid : MonoBehaviour
             cell.CellDehighlighted += OnCellDehighlighted;
             cell.GetComponent<Cell>().GetNeighbours(Cells);
         }
+        //END CJG
+
+    }
+
+    void GenerateObstacles()
+    {
+        // Spawn Obstacles need to make the locations a function of the Map Data base handler.
+        obstacleGenerator.RandomSpawnObstacles(Cells);
+    }
+
+    private void Initialize()
+    {
+       // ExecuteMapDatabase();
+
+        ClearAndCreateMap();
+
+        GenerateObstacles();
+
+        //GenerateObjectives();
+
+        GetPlayersScripts();
+
+        // IUnitGenerator (UnitGeneratorTest.cs) Spawn starting enemies, once finished invoke Starting enemy units spawned event. this will serve to enable the starting location selector script.
+        // Enable the starting location selection script
+        // Spawns are confirmed disable the starting location script after invoking event handler that IUnitGenerator is subscribed to in oder to spawn in the Friend units (seperate function).
 
         var unitGenerator = GetComponent<IUnitGenerator>();
         if (unitGenerator != null)
@@ -198,6 +182,31 @@ public class CellGrid : MonoBehaviour
 
         StartCoroutine(EnableFriendUnitsMeshRenderers(0.5f));
 
+    }
+
+    private void GenerateObjectives()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void ExecuteMapDatabase()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void GetPlayersScripts()
+    {
+        Players = new List<Player>();
+        for (int i = 0; i < PlayersParent.childCount; i++)
+        {
+            var player = PlayersParent.GetChild(i).GetComponent<Player>();
+            if (player != null)
+                Players.Add(player);
+            else
+                Debug.LogError("Invalid object in Players Parent game object");
+        }
+        NumberOfPlayers = Players.Count;
+        CurrentPlayerNumber = Players.Min(p => p.PlayerNumber);
     }
 
     private IEnumerator EnableFriendUnitsMeshRenderers(float v)
