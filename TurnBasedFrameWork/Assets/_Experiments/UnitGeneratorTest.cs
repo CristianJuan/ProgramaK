@@ -42,6 +42,7 @@ public class UnitGeneratorTest : MonoBehaviour, IUnitGenerator
         return ret;
     }
 
+
     /// <summary>
     /// Snaps unit objects to the nearest cell.
     /// </summary>

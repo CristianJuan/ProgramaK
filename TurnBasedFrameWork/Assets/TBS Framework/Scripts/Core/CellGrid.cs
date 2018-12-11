@@ -90,15 +90,13 @@ public class CellGrid : MonoBehaviour
     }
     private void Start()
     {
+        spawnManager = SpawnManager.instance;
         if (LevelLoading != null)
             LevelLoading.Invoke(this, new EventArgs());
 
         Initialize();
-
-        if (LevelLoadingDone != null)
-            LevelLoadingDone.Invoke(this, new EventArgs());
-        spawnManager.InitializeSpawnManager(Cells);
-        StartGame();
+        TurnOffFriendUnitsMeshRenderer();
+        StartCoroutine(EnableFriendUnitsMeshRenderers(10f));
     }
 
     void ClearAndCreateMap()
@@ -152,7 +150,7 @@ public class CellGrid : MonoBehaviour
 
     private void Initialize()
     {
-       // ExecuteMapDatabase();
+        // ExecuteMapDatabase();
 
         ClearAndCreateMap();
 
@@ -166,22 +164,72 @@ public class CellGrid : MonoBehaviour
         // Enable the starting location selection script
         // Spawns are confirmed disable the starting location script after invoking event handler that IUnitGenerator is subscribed to in oder to spawn in the Friend units (seperate function).
 
-        var unitGenerator = GetComponent<IUnitGenerator>();
+        GenerateUnits();
+
+        if (GameStarted != null)
+            GameStarted.Invoke(this, new EventArgs());
+        if (LevelLoadingDone != null)
+            LevelLoadingDone.Invoke(this, new EventArgs());
+        StartMap();
+        // Enemy units are spawned in 
+        //                            these are done from GenerateUnits function
+        // Friend units are spawned in
+        // Need to:
+        // 1. Disable the Friend units mesh renderer => Done
+        // TurnOffFriendUnitsMeshRenderer();
+
+        // 2. Highlight selectable cells to spawn in, this should depend upon maps basis
+        // spawnManager.HighlightSpawnableCells(Cells); TODO bug with UnMark cell after OnMouseExit Unmark cell.
+
+        // 3.From Spawn Manager ActivateSelectSpawnLocations
+
+        // 4.Fill up the spawn locations list
+
+        // 5.Once the spawn location list is confirmed, DeActivateSelectSpawnLocations
+
+        // 6.Invoke Ready to spawn Event hanlder,
+
+        // 7.Spawn friend units and enable mesh renderers
+        // 
+
+
+    }
+
+    private void GenerateUnits()
+    {
+        var unitGenerator = GetComponent<UnitGeneratorTest>();
         if (unitGenerator != null)
         {
             Units = unitGenerator.SpawnUnits(Cells);
             foreach (var unit in Units)
             {
                 AddUnit(unit.GetComponent<Transform>());
-                unit.GetComponent<MeshRenderer>().enabled = false;
+                // unit.GetComponent<MeshRenderer>().enabled = false; 
 
             }
         }
         else
             Debug.LogError("No IUnitGenerator script attached to cell grid");
+    }
 
-        StartCoroutine(EnableFriendUnitsMeshRenderers(0.5f));
+    private void TurnOffFriendUnitsMeshRenderer()
+    {
+        foreach (var unit in Units)
+        {
+            if(unit.transform.tag == "Friend")
+               unit.GetComponent<MeshRenderer>().enabled = false; 
 
+        }
+    }
+
+    private void TurnOnFriendUnitsMeshRenderer()
+    {
+        foreach (var unit in Units)
+        {
+            if (unit.transform.tag == "Friend")
+                unit.GetComponent<MeshRenderer>().enabled = enabled;
+
+        }
     }
 
     private void GenerateObjectives()
@@ -212,11 +260,6 @@ public class CellGrid : MonoBehaviour
     private IEnumerator EnableFriendUnitsMeshRenderers(float v)
     {
         yield return new WaitForSeconds(v);
-        Vector3 spawnInOffset = new Vector3(1, 0, 0);
-        foreach (var unit in Units)
-        {
-            unit.transform.position = unit.transform.position + spawnInOffset;
-        }
         foreach (var unit in Units)
         {
             unit.GetComponent<MeshRenderer>().enabled = true;
@@ -268,11 +311,8 @@ public class CellGrid : MonoBehaviour
     /// <summary>
     /// Method is called once, at the beggining of the game.
     /// </summary>
-    public void StartGame()
+    public void StartMap()
     {
-        if(GameStarted != null)
-            GameStarted.Invoke(this, new EventArgs());
-  
         Units.FindAll(u => u.PlayerNumber.Equals(CurrentPlayerNumber)).ForEach(u => { u.OnTurnStart(); });
         Players.Find(p => p.PlayerNumber.Equals(CurrentPlayerNumber)).Play(this);
     }

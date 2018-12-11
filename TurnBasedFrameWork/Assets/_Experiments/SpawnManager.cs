@@ -33,7 +33,7 @@ public class SpawnManager : MonoBehaviour {
         CellPositionVectors = new List<Vector3>(3);
     }
 
-    public void InitializeSpawnManager(List<Cell> _CellGridCellsList)
+    public void ActivateSelectSpawnLocations(List<Cell> _CellGridCellsList)
     {
         foreach(Cell cell in _CellGridCellsList)
         {
@@ -41,16 +41,67 @@ public class SpawnManager : MonoBehaviour {
         }
 
     }
-  
+
+    public void DeActivateSelectSpawnLocations(List<Cell> _CellGridCellsList)
+    {
+        foreach (Cell cell in _CellGridCellsList)
+        {
+            cell.CellClicked -= OnCellClicked;
+        }
+
+    }
+
     private void OnCellClicked(object sender, EventArgs e)
     {
         if(!FriendlyUnitsSpawnedIn)// add condition necessary to track a GameState from a GameStateManger singleton.
         {
             var cell = sender as Cell;
-            AddSpawnLocationCell(cell);
+            bool ClikedCellisOkToSpawnIn = ProcessSelectedCellForSpawnAvailablity(cell);// TODO would a list filled at Awake work better?
+            if (ClikedCellisOkToSpawnIn)
+                AddSpawnLocationCell(cell);
+            else
+                Debug.Log("Not a permited cell to spawn in.");
         }
 
     }
+
+    bool ProcessSelectedCellForSpawnAvailablity(Cell _cell)
+    {
+        if (_cell.transform.position.z >= 8 && !_cell.HasObjective && !_cell.IsTaken)
+        {
+            Debug.Log("Saw a available Cell to select for spawn");
+            return true;
+        }
+        else
+        {
+            Debug.Log("Selected Cell is not avaible for spawining in");
+            return false;
+
+        }
+    }
+
+    public void HighlightSpawnableCells(List<Cell> _CellGridCellsList)
+    {
+        foreach(Cell c in _CellGridCellsList)
+        {
+            if(ProcessSelectedCellForSpawnAvailablity(c))
+            {
+                c.MarkAsReachable();
+            }
+        }
+    }
+
+    public void DeHighlightSpawnableCells(List<Cell> _CellGridCellsList)
+    {
+        foreach (Cell c in _CellGridCellsList)
+        {
+            if (ProcessSelectedCellForSpawnAvailablity(c))
+            {
+                c.UnMark();
+            }
+        }
+    }
+
 
     private void AddSpawnLocationCell(Cell cell)
     {
@@ -97,5 +148,9 @@ public class SpawnManager : MonoBehaviour {
                 //Tell some UI that the last selected spawn in location was deleted
             }
         }
+        // Write logic to Invoke Ready to spawn Event hanlder.
+        // 
     }
+
+    // 
 }

@@ -16,7 +16,7 @@ class SampleSquare : Square
     public override void MarkAsHighlighted()
     {
         GetComponent<Renderer>().material.color = new Color(0.95f, 0.95f, 0.95f);
-}
+    }
 
     public override void MarkAsPath()
     {
@@ -24,6 +24,11 @@ class SampleSquare : Square
     }
 
     public override void MarkAsReachable()
+    {
+        GetComponent<Renderer>().material.color = Color.yellow;
+    }
+
+    public void MarkAsSpawnableCell()
     {
         GetComponent<Renderer>().material.color = Color.yellow;
     }
