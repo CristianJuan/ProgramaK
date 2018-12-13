@@ -46,8 +46,8 @@ public class SampleUnit : Unit
 
     public override void MarkAsAttacking(Unit other)
     {
-        Debug.Log(unitname + " Called MarkAsAttacking");
-        Debug.Log(unitname + " MarkAsAttacking passed as parameter the unit " + other.name);
+       // Debug.Log(unitname + " Called MarkAsAttacking");
+       // Debug.Log(unitname + " MarkAsAttacking passed as parameter the unit " + other.name);
         if (myWeaponSystemController != null)
         {
             myWeaponSystemController.ExecuteSystem(ref other);
@@ -62,7 +62,7 @@ public class SampleUnit : Unit
 
     public override void MarkAsDefending(Unit other)
     {
-        Debug.Log(unitname + " Called MarkAsDefending");
+      //  Debug.Log(unitname + " Called MarkAsDefending");
     }
 
     public override void MarkAsDestroyed()

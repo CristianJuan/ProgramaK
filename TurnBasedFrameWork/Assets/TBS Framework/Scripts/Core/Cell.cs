@@ -58,7 +58,7 @@ public abstract class Cell : MonoBehaviour, IGraphNode, IEquatable<Cell>
     {
         if (CellClicked != null)
         {
-            Debug.Log("Im invoking OnMouseDown for a Cell Unit");
+            //Debug.Log("Im invoking OnMouseDown for a Cell Unit");
             CellClicked.Invoke(this, new EventArgs());
 
         }

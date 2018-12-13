@@ -21,16 +21,18 @@ public class SpawnManager : MonoBehaviour {
 
     }
 #endregion
+    public event EventHandler SpawnFriendUnits;// Correct way would be to use this with an UI instead of CellGrid. The UI will tell 
+    // CellGrid to do its thing.
 
-    Stack<Cell> spawnInCellLocations;
-    List<Vector3> CellPositionVectors;
+    public List<Cell> _spawnInCells;
+    public List<Cell> spawnableCells;
 
     bool FriendlyUnitsSpawnedIn = false;// to be set as true when CellGrid invokes a EventHandler indicating that friend units are spawned in.
 
     private void Start()
     {
-        spawnInCellLocations = new Stack<Cell>(3);
-        CellPositionVectors = new List<Vector3>(3);
+        _spawnInCells = new List<Cell>(3);
+        List<Cell> spawnableCells = new List<Cell>(128);
     }
 
     public void ActivateSelectSpawnLocations(List<Cell> _CellGridCellsList)
@@ -86,7 +88,9 @@ public class SpawnManager : MonoBehaviour {
         {
             if(ProcessSelectedCellForSpawnAvailablity(c))
             {
-                c.MarkAsReachable();
+                var _c = (SampleSquare)c;
+                _c.MarkAsSpawnableCell();
+                spawnableCells.Add(c);
             }
         }
     }
@@ -105,12 +109,11 @@ public class SpawnManager : MonoBehaviour {
 
     private void AddSpawnLocationCell(Cell cell)
     {
-        if(!spawnInCellLocations.Contains(cell))
+        if(!_spawnInCells.Contains(cell))
         {
-            if(spawnInCellLocations.Count < 3)
+            if(_spawnInCells.Count < 3)
             {
-                spawnInCellLocations.Push(cell);
-                CellPositionVectors.Add(cell.transform.position);
+                _spawnInCells.Add(cell);
             }
                 
             else
@@ -127,10 +130,10 @@ public class SpawnManager : MonoBehaviour {
 
     Cell DeleteSpawnLocation()
     {
-        if (spawnInCellLocations.Count > 0)
+        if (_spawnInCells.Count > 0)
         {
-            var c = spawnInCellLocations.Pop();
-            CellPositionVectors.Remove(c.transform.position);
+            var c = _spawnInCells[_spawnInCells.Count];
+            _spawnInCells.RemoveAt(_spawnInCells.Count - 1);
             return c;
         }
         else return null;
@@ -149,7 +152,29 @@ public class SpawnManager : MonoBehaviour {
             }
         }
         // Write logic to Invoke Ready to spawn Event hanlder.
-        // 
+        if(Input.GetKey(KeyCode.Y))
+        {
+            if(!FriendlyUnitsSpawnedIn && _spawnInCells.Count == 3)
+            {
+                FriendlyUnitsSpawnedIn = true;
+
+                Debug.Log("Tell some UI that units are able to spawn in, activate UI button to do this");
+                if (SpawnFriendUnits != null)
+                {
+                    SpawnFriendUnits.Invoke(this, new EventArgs());// Correct way is UI do this. Spawn manager
+                                                                   // just tells the UI to activate the button to spawn
+                    Debug.Log("SpawnManager: spawnInCells contains cells:");
+                    foreach(Cell c in _spawnInCells)
+                    {
+                        Debug.Log(c.transform.position);
+                    }
+                
+                }
+
+
+
+            }
+        }
     }
 
     // 

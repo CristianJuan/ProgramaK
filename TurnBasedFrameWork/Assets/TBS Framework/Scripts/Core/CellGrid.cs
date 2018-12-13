@@ -83,6 +83,7 @@ public class CellGrid : MonoBehaviour
     public static int counter = 120;
 
     SpawnManager spawnManager;
+    bool FriendUnitsSpawnedIn = false;
     private void Awake()
     {
         spawnManager = SpawnManager.instance;
@@ -91,12 +92,13 @@ public class CellGrid : MonoBehaviour
     private void Start()
     {
         spawnManager = SpawnManager.instance;
+        spawnManager.SpawnFriendUnits += MoveFriendUnitsAsDeclaredBySpawnManager;
         if (LevelLoading != null)
             LevelLoading.Invoke(this, new EventArgs());
 
         Initialize();
-        TurnOffFriendUnitsMeshRenderer();
-        StartCoroutine(EnableFriendUnitsMeshRenderers(10f));
+       // TurnOffFriendUnitsMeshRenderer();
+       // StartCoroutine(EnableFriendUnitsMeshRenderers(10f));
     }
 
     void ClearAndCreateMap()
@@ -176,14 +178,14 @@ public class CellGrid : MonoBehaviour
         // Friend units are spawned in
         // Need to:
         // 1. Disable the Friend units mesh renderer => Done
-        // TurnOffFriendUnitsMeshRenderer();
+         TurnOffFriendUnitsMeshRenderer();
 
         // 2. Highlight selectable cells to spawn in, this should depend upon maps basis
-        // spawnManager.HighlightSpawnableCells(Cells); TODO bug with UnMark cell after OnMouseExit Unmark cell.
+         spawnManager.HighlightSpawnableCells(Cells); //TODO bug with UnMark cell after OnMouseExit Unmark cell.
 
         // 3.From Spawn Manager ActivateSelectSpawnLocations
-
-        // 4.Fill up the spawn locations list
+        spawnManager.ActivateSelectSpawnLocations(Cells);
+        // 4.Fill up the spawn locations list, user input
 
         // 5.Once the spawn location list is confirmed, DeActivateSelectSpawnLocations
 
@@ -191,8 +193,6 @@ public class CellGrid : MonoBehaviour
 
         // 7.Spawn friend units and enable mesh renderers
         // 
-
-
     }
 
     private void GenerateUnits()
@@ -269,7 +269,23 @@ public class CellGrid : MonoBehaviour
 
     private void OnCellDehighlighted(object sender, EventArgs e)
     {
-        CellGridState.OnCellDeselected(sender as Cell);
+        if (FriendUnitsSpawnedIn)
+        {
+            CellGridState.OnCellDeselected(sender as Cell);
+        }
+        else
+        {
+            bool spawnableCell = spawnManager.spawnableCells.Contains(sender as Cell);// is the dehighlighted cell part of the spawnable cells list?
+            if (!spawnableCell)
+            {
+                CellGridState.OnCellDeselected(sender as Cell);
+            }
+            else
+            {
+                var _cell = sender as SampleSquare;
+                _cell.MarkAsSpawnableCell();
+            }
+        }         
     }
     private void OnCellHighlighted(object sender, EventArgs e)
     {
@@ -382,5 +398,45 @@ public class CellGrid : MonoBehaviour
     {
         objectiveGenerator.seed = new System.Random().Next();
         objectiveGenerator.RandomSpawnObjective(Cells);
+    }
+
+    public int FriendUnitCounter = 0;
+    public void MoveFriendUnitsAsDeclaredBySpawnManager(object sender, EventArgs e)
+    {
+        FriendUnitsSpawnedIn = true;
+        var _spawnManager = sender as SpawnManager;
+        var spawnInCells = _spawnManager._spawnInCells;
+        var spawnableCells = _spawnManager.spawnableCells;
+        _spawnManager.DeActivateSelectSpawnLocations(Cells);
+
+        foreach (Cell c in spawnableCells)
+        {
+            c.UnMark();
+        }
+
+        int i = 0;
+        Stack<Unit> FriendUnits = new Stack<Unit>(3);
+        foreach(Unit _fu in Units)
+        {
+            if(_fu.transform.tag == "Friend")
+            {
+                FriendUnits.Push(_fu);
+            }
+        }
+        FriendUnitCounter = FriendUnits.Count;
+        for (i = 0; i <= spawnInCells.Count-1; i++)
+        {
+            Debug.Log(i);
+            var _cell = spawnInCells.ElementAt(i);
+            var _unit = FriendUnits.Pop();
+            Debug.Log("Moving unit: " + _unit.name + " to " + _cell.transform.position);
+            _unit.Cell.IsTaken = false;
+            _unit.transform.position = _cell.transform.position + new Vector3(0,1,0);
+            _unit.Cell = _cell;
+            _unit.Cell.IsTaken = true;
+        }
+        // for loop above spawns in the units
+
+        TurnOnFriendUnitsMeshRenderer();
     }
 }

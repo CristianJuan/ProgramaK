@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{49C26D70-5889-CB0D-5EFB-E68D378E2E4E}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Experiments/SpawnManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TBS Framework/Scripts/Core/Unit.cs">
     <Files>
-      <File FileName="Assets/TBS Framework/Scripts/Core/CellGrid.cs" Line="182" Column="56" />
-      <File FileName="Assets/_Experiments/SpawnManager.cs" Line="128" Column="63" />
-      <File FileName="Assets/TBS Framework/Scripts/Tutorial/SampleSquare.cs" Line="33" Column="64" />
-      <File FileName="Assets/TBS Framework/Scripts/Core/Cell.cs" Line="23" Column="30" />
+      <File FileName="Assets/TBS Framework/Scripts/Core/CellGrid.cs" Line="272" Column="34" />
+      <File FileName="Assets/_Experiments/SpawnManager.cs" Line="30" Column="5" />
+      <File FileName="Assets/TBS Framework/Scripts/Tutorial/SampleSquare.cs" Line="25" Column="5" />
+      <File FileName="Assets/TBS Framework/Scripts/Core/Cell.cs" Line="82" Column="5" />
+      <File FileName="Assets/TBS Framework/Scripts/Core/Unit.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

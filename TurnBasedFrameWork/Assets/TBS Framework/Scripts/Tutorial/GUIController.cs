@@ -28,7 +28,7 @@ public class GUIController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.N))
         {
-            Debug.Log("Saw key N pressed.");
+        //    Debug.Log("Saw key N pressed.");
             CellGrid.EndTurn();//User ends his turn by pressing "n" on keyboard.
         }
 	}
